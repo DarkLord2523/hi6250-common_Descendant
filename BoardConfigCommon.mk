@@ -80,3 +80,7 @@ TARGET_LD_SHIM_LIBS := \
 
 # vintf
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(VENDOR_PATH)/framework_manifest.xml
+
+# Opt
+ADDITIONAL_BUILD_PROPERTIES += dalvik.vm.image-dex2oat-filter=verify-none
+
