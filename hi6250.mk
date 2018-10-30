@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product-if-exists, vendor/huawei/kirin970-common/kirin970-common-vendor.mk)
+$(call inherit-product-if-exists, vendor/huawei/hi6250-common/hi6250-common-vendor.mk)
 $(call inherit-product-if-exists, vendor/gapps/inline.mk)
 
 # APN configs
@@ -35,9 +35,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.bcm43xx.rc \
     init.hisi.rc \
-    init.kirin970.rc \
-    init.kirin970.ab.rc \
-    init.kirin970.environ.rc
+    init.hi6250.rc \
+    init.hi6250.ab.rc \
+    init.hi6250.environ.rc
 
 # Display
 PRODUCT_PACKAGES += \
@@ -80,7 +80,7 @@ PRODUCT_PACKAGES += \
 
 # Release tools
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/releasetools/releasetools.kirin970.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/releasetools.kirin970.sh
+    $(LOCAL_PATH)/releasetools/releasetools.hi6250.sh:$(TARGET_COPY_OUT_SYSTEM)/bin/releasetools.hi6250.sh
 
 # Selinux
 PRODUCT_COPY_FILES += \
@@ -92,7 +92,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.kirin970
+    android.hardware.usb@1.0-service.hi6250
 
 # VNDK
 PRODUCT_COPY_FILES += \
