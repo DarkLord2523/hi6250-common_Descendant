@@ -43,6 +43,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libion
 
+# Descendant's properties to enable Huawei oddity fixes
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.camera.huawei = true \
+    persist.sys.radio.huawei = true
+
 # HIDL
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/compatibility_matrix.xml:system/compatibility_matrix.xml
